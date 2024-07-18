@@ -1,58 +1,51 @@
-.container{
-    display: flex;
-    align-items: center;
-    gap: 100px;
+.container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
 }
 
-.imgContainer{
-    position: relative;
-    flex: 1;
-    height: 500px;
+.imgContainer {
+  flex: 1;
+  height: 500px;
+  position: relative;
 }
 
-.img{
-    object-fit: contain;
+.img {
+  object-fit: contain;
 }
 
-.formContainer{
-    flex: 1;
+.formContainer {
+  flex: 1;
 }
 
-.form{
-display: flex;
-flex-direction: column;
-gap: 20px;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .form input,
-.form textarea{
-    padding: 20px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    background-color: var(--bgSoft);
-    color: var(--text);
+.form textarea {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--bgSoft);
+  color: var(--text);
 }
 
-
-.form button{
-    padding: 20px;
-    background-color: var(--btn);
-    color: var(--text);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.form button {
+  padding: 20px;
+  background-color: var(--btn);
+  color: var(--text);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .container{
-        flex-direction: column;
-    }
-
-    .boxes{
-        flex-direction: column;
-        gap: 50px;
-        text-align: center;
-    }
-
+  .container {
+    flex-direction: column;
+  }
 }

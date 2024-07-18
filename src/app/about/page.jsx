@@ -1,7 +1,15 @@
 import Image from "next/image";
 import styles from "./about.module.css";
 
+export const metadata = {
+  title: "About Page",
+  description: "About description",
+};
+
+
 const AboutPage = () => {
+
+  // console.log("lets check where it works")
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
@@ -11,9 +19,9 @@ const AboutPage = () => {
         </h1>
         <p className={styles.desc}>
           We create digital ideas that are bigger, bolder, braver and better. We
-          believe in good ideas flexibility and precision. We're world's best
-          consulting & finance solution provider. Wide range of web and software
-          development services.
+          believe in good ideas flexibility and precission We’re world’s Our
+          Special Team best consulting & finance solution provider. Wide range
+          of web and software development services.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
@@ -34,7 +42,8 @@ const AboutPage = () => {
         <Image
           src="/about.png"
           alt="About Image"
-          layout="fill"    
+          fill
+          className={styles.img}
         />
       </div>
     </div>

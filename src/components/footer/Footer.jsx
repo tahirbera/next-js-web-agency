@@ -1,16 +1,14 @@
-import styles from "./footer.module.css"
+import styles from "./footer.module.css";
+
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>
-        Beradev
-      </div>
+      <div className={styles.logo}>lamadev</div>
       <div className={styles.text}>
-        Beradev creative thoughts agency © All rights reserved.
-
+        Lama creative thoughts agency © All rights reserved.
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
